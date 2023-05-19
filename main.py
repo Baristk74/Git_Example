@@ -27,3 +27,13 @@ while True:
                 yaricap = int(input("Dairenin yarıçapını metre cinsinden giriniz:\n"))
                 arsa.daire(yaricap)
                 print("Arsanın fiyatı {:0.2f} TL".format(arsa.arsanin_fiyati()))
+        elif tur_secimi == "d":
+            kat_sayi_secimi = int(input("sırasıyla ara kat, üst kat, zemin kat için 1,2,3 seçiniz\n"))
+
+            while kat_sayi_secimi != 1 and kat_sayi_secimi != 2 and kat_sayi_secimi != 3:
+                kat_sayi_secimi = int(input("1,2,3 seçeneklerinden birini seçiniz!\n"))
+            daire.katsayi_secimi(kat_sayi_secimi)
+            kisa_kenar = int(input("dairenin kısa kenarını metre cinsinden giriniz:\n"))
+            uzun_kenar = int(input("dairenin uzun kenarını metre cinsinden giriniz:\n"))
+            daire.dairenin_alani(kisa_kenar, uzun_kenar)
+            print("Dairenin fiyatı {:0.2f} TL".format(daire.dairenin_fiyati()))
