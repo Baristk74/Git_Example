@@ -11,3 +11,5 @@ while True:
             denetleme = input("e/E ya da h/H seçiniz!!\n")
         if denetleme == "e" or denetleme == "E":
             continue
+        elif denetleme == "h" or denetleme == "H":
+            exit()
