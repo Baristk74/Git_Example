@@ -9,3 +9,5 @@ while True:
         denetleme = input("tekrar hesaplamak için e/E,çıkmak için h/H seçiniz \n")
         while denetleme != "e" and denetleme != "E" and denetleme != "h" and denetleme != "H":
             denetleme = input("e/E ya da h/H seçiniz!!\n")
+        if denetleme == "e" or denetleme == "E":
+            continue
