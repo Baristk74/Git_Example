@@ -37,3 +37,10 @@ while True:
             uzun_kenar = int(input("dairenin uzun kenarını metre cinsinden giriniz:\n"))
             daire.dairenin_alani(kisa_kenar, uzun_kenar)
             print("Dairenin fiyatı {:0.2f} TL".format(daire.dairenin_fiyati()))
+        denetleme = input("tekrar hesaplamak için e/E,çıkmak için h/H seçiniz \n")
+        while denetleme != "e" and denetleme != "E" and denetleme != "h" and denetleme != "H":
+            denetleme = input("e/E ya da h/H seçiniz!!\n")
+        if denetleme == "e" or denetleme == "E":
+            continue
+        elif denetleme == "h" or denetleme == "H":
+            exit()
